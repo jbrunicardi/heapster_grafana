@@ -10,5 +10,7 @@ RUN apt-get update && \
 COPY dashboards /dashboards
 COPY run.sh /run.sh
 
+RUN chmod +x /run.sh
+
 EXPOSE 3000
 ENTRYPOINT /run.sh
